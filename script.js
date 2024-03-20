@@ -32,6 +32,7 @@ $(document).ready(function () {
 });
 
 function submitQuiz() {
+    
     var userAnswers = [
         userSelections.reason,
         userSelections.scent,
@@ -45,11 +46,14 @@ function submitQuiz() {
 
     // Update the webpage with the matching candle's details
     if (matchingCandle) {
-        document.getElementById("candleImage").style.display = "block"
+        $("#candleResult").show();
+        $("#candleImage").show();
         console.log("IT WORKS!!!")
         $("#candleName").text(matchingCandle.candlename);
         $("#candleDescription").text(matchingCandle.candledescription);
         $("#candleImage").attr("src", matchingCandle.candleimage);
+        $("#candleNumber").text(matchingCandle.reviewNumber);
+        $("#candlePrice").text(matchingCandle.price);
     } else {
         console.log("No matching candle found.");
         // Optionally, update the webpage to indicate no match was found
@@ -74,19 +78,22 @@ function determineCandle(userAnswers) {
     return matchingCandle;
 }
 function questiononenext() {
-    document.getElementById("candlequizquestionone").style.display = "none";
-    document.getElementById("candlequizquestiontwo").style.display = "block";
+    $("#candlequizquestionone").hide();
+    $("#candlequizquestiontwo").show();
 }
+
 function questiontwonext() {
-    document.getElementById("candlequizquestiontwo").style.display = "none";
-    document.getElementById("candlequizquestionthree").style.display = "block";
+    $("#candlequizquestiontwo").hide();
+    $("#candlequizquestionthree").show();
 }
+
 function questionthreenext() {
-    document.getElementById("candlequizquestionthree").style.display = "none";
-    document.getElementById("candlequizquestionfour").style.display = "block";
+    $("#candlequizquestionthree").hide();
+    $("#candlequizquestionfour").show();
 }
+
 function questionfournext() {
-    document.getElementById("candlequizquestionfour").style.display = "none";
-    document.getElementById("candle-modal").style.display = "none";
+    $("#candlequizquestionfour").hide();
+    $("#candle-modal").hide();
     setTimeout(submitQuiz, 3000);
 }

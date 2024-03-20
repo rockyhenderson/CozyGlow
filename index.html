@@ -94,11 +94,23 @@
         </div>
     </div>
 
-    <div id="candleResult">
-        <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
-        <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
+    <div id="candleResult" style="display: none;">
         <img id="candleImage" src="" alt="Candle Image" style="display: none;">
-        <!-- Image of the candle will be displayed here -->
+        <div style="margin-left:10px;">
+            <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
+            <h3 id="candlePrice"></h3>
+            <div id="star-contanier">
+                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                <i class="fa-regular fa-star"></i>
+                <p id="candleNumber"></p>
+            </div>
+            <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
+            <button class="add-to-cart-button"><i class="fa-solid fa-bag-shopping"></i>Add</button>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 

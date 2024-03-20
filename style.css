@@ -65,6 +65,37 @@ body{
     font-size:30px;
 }
 #candleImage{
-    height:200px;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    margin:auto;
+}
+#candleResult{
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    
+}
+#star-contanier{
+    display: flex;
     width:200px;
+    font-size: 20px;
+}
+#star-contanier i{
+    margin-right:5px;
+}
+#star-contanier p{
+    margin-top:0px;
+    margin-bottom:0px;
+    font-weight: 200;
+}
+.add-to-cart-button{
+    background-color: var(--tertiary-color);
+    border:none;
+    height:60px;
+    width:200px;
+    font-size:25px;
+    border-radius: 10px;
+}
+.add-to-cart-button i {
+    margin-right:10px;
 }
