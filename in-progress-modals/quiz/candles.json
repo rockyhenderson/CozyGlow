@@ -1,0 +1,102 @@
+[
+    {
+        "mood": "Relaxation",
+        "scent": "Floral",
+        "location": "Bedroom",
+        "timeOfDay": "Evening",
+        "candlename": "Mysterious Citrus",
+        "candlecolor": "Grey",
+        "candledescription": "This grey candle, infused with the essence of citrus, offers a mysterious experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image1.png"
+    },
+    {
+        "candlename": "Calming Peppermint",
+        "candlecolor": "Grey",
+        "candledescription": "This grey candle, infused with the essence of peppermint, offers a calming experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image2.png"
+    },
+    {
+        "candlename": "Soothing Rose ",
+        "candlecolor": "Blue",
+        "candledescription": "This blue candle, infused with the essence of rose, offers a soothing experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image3.png"
+    },
+    {
+        "candlename": "Delicate Vanilla",
+        "candlecolor": "Red",
+        "candledescription": "This red candle, infused with the essence of vanilla, offers a delicate experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image4.png"
+    },
+    {
+        "candlename": "Invigorating Rose",
+        "candlecolor": "Black",
+        "candledescription": "This black candle, infused with the essence of rose, offers a invigorating experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image5.png"
+    },
+    {
+        "candlename": "Calming Ocean breeze",
+        "candlecolor": "Red",
+        "candledescription": "This red candle, infused with the essence of ocean breeze, offers a calming experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image6.png"
+    },
+    {
+        "candlename": "Soothing Peppermint",
+        "candlecolor": "Blue",
+        "candledescription": "This blue candle, infused with the essence of peppermint, offers a soothing experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image7.png"
+    },
+    {
+        "candlename": "Calming Cinnamon",
+        "candlecolor": "Green",
+        "candledescription": "This green candle, infused with the essence of cinnamon, offers a calming experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image8.png"
+    },
+    {
+        "candlename": "Romantic Sandalwood",
+        "candlecolor": "Red",
+        "candledescription": "This red candle, infused with the essence of sandalwood, offers a romantic experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image9.png"
+    },
+    {
+        "candlename": "Bold Citrus",
+        "candlecolor": "Red",
+        "candledescription": "This red candle, infused with the essence of citrus, offers a bold experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image10.png"
+    },
+    {
+        "candlename": "Mysterious Ocean breeze",
+        "candlecolor": "Blue",
+        "candledescription": "This blue candle, infused with the essence of ocean breeze, offers a mysterious experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image11.png"
+    },
+    {
+        "candlename": "Delicate Cinnamon",
+        "candlecolor": "Blue",
+        "candledescription": "This blue candle, infused with the essence of cinnamon, offers a delicate experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image12.png"
+    },
+    {
+        "candlename": "Soothing Cinnamon",
+        "candlecolor": "Yellow",
+        "candledescription": "This yellow candle, infused with the essence of cinnamon, offers a soothing experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image13.png"
+    },
+    {
+        "candlename": "Invigorating Lavender",
+        "candlecolor": "Green",
+        "candledescription": "This green candle, infused with the essence of lavender, offers a invigorating experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image14.png"
+    },
+    {
+        "candlename": "Soothing Pine",
+        "candlecolor": "Red",
+        "candledescription": "This red candle, infused with the essence of pine, offers a soothing experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image15.png"
+    },
+    {
+        "candlename": "Calming Peppermint",
+        "candlecolor": "Yellow",
+        "candledescription": "This yellow candle, infused with the essence of peppermint, offers a calming experience that rejuvenates the senses and transforms any room into a serene haven.",
+        "candleimage": "image16.png"
+    }
+]
