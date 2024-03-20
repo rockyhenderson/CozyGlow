@@ -101,6 +101,8 @@ function questionfournext() {
 }
 function candleModalPopup(){
     $("#candle-modal-popup").show();
+    $("#candleResult").hide();
+    $("#candle-modal-questions").show();
 }
 function closeChooseCandleModal(){
     $("#candle-modal-popup").hide();
