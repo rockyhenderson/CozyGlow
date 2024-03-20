@@ -3,7 +3,10 @@
     --secondary-color: #FFFFFF; /* White */
     --tertiary-color: #D2AC47; /* Gold (amber) */
   }
-  
+
+html{
+    overflow-x: hidden;
+}
 body{
     height:100vh;
     width:100%;
@@ -21,7 +24,7 @@ body{
     border-radius: 20px;
     font-family: inherit;
 }
-#candle-modal{
+#candle-modal-questions{
     height:100vh;
     width:100%;
 }
@@ -71,9 +74,12 @@ body{
 }
 #candleResult{
     overflow-x: hidden;
-    height:100%;
-    width:100%;
-    
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    z-index: inherit;
+    top:0;
+    right:0;
 }
 #star-contanier{
     display: flex;
@@ -98,4 +104,27 @@ body{
 }
 .add-to-cart-button i {
     margin-right:10px;
+}
+#candle-modal-popup{
+    position: absolute;
+    z-index:100;
+    top:0;
+    right:0;
+}
+#countdown{
+    background-color: white;
+    height: 100vh;
+    width:100vw;
+    position: absolute;
+    z-index:102;
+    top:0;
+    right:0;
+}
+#modal-x{
+    position: absolute;
+    z-index:101;
+    top:10;
+    right:0;
+    margin-top:30px;
+    margin-right:20px;
 }

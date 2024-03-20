@@ -14,104 +14,116 @@
 </head>
 
 <body>
-    <div id=candle-modal>
-        <div id="candleQuiz">
-            <div id="candlequizquestionone" class="candle-modal-inside">
-                <div class="candle-modal-top-question">
-                    <div class="button-holder">
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+    <div id="right-for-you-candle">
+        <h2> What Candle is best for you?</h2>
+        <button id="find-out-now-button" onclick="candleModalPopup()">Find out now</button>
+    </div>
+    <div id="candle-modal-popup" style="display: none;">
+        <i id="modal-x" class="fa-solid fa-x fa-xl" onclick="closeChooseCandleModal()"></i>
+        <div id=candle-modal-questions>
+            <div id="candleQuiz">
+                <div id="candlequizquestionone" class="candle-modal-inside">
+                    <div class="candle-modal-top-question">
+                        <div class="button-holder">
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        </div>
+                        <h3>What's the main reason you're interested in a candle?</h3>
+                        <i>Click an Option below</i>
                     </div>
-                    <h3>What's the main reason you're interested in a candle?</h3>
-                    <i>Click an Option below</i>
-                </div>
-                <div class="candle-modal-bottom-anwser">
-                    <div class="positional-div">
-                        <button class="button-option" data-question="reason" data-value="Relaxation" onclick="questiononenext()">Relaxation</button>
-                        <button class="button-option" data-question="reason" data-value="Decoration" onclick="questiononenext()">Decoration</button>
+                    <div class="candle-modal-bottom-anwser">
+                        <div class="positional-div">
+                            <button class="button-option" data-question="reason" data-value="Relaxation" onclick="questiononenext()">Relaxation</button>
+                            <button class="button-option" data-question="reason" data-value="Decoration" onclick="questiononenext()">Decoration</button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="candlequizquestiontwo" class="candle-modal-inside" style="display:none">
-                <div class="candle-modal-top-question">
-                    <div class="button-holder">
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                <div id="candlequizquestiontwo" class="candle-modal-inside" style="display:none">
+                    <div class="candle-modal-top-question">
+                        <div class="button-holder">
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        </div>
+                        <h3>Which scent type do you prefer?</h3>
+                        <i>Click an Option below</i>
                     </div>
-                    <h3>Which scent type do you prefer?</h3>
-                    <i>Click an Option below</i>
-                </div>
-                <div class="candle-modal-bottom-anwser">
-                    <div class="positional-div">
-                        <button class="button-option" data-question="scent" data-value="Floral" onclick="questiontwonext()">Floral</button>
-                        <button class="button-option" data-question="scent" data-value="Woody" onclick="questiontwonext()">Woody</button>
+                    <div class="candle-modal-bottom-anwser">
+                        <div class="positional-div">
+                            <button class="button-option" data-question="scent" data-value="Floral" onclick="questiontwonext()">Floral</button>
+                            <button class="button-option" data-question="scent" data-value="Woody" onclick="questiontwonext()">Woody</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="candlequizquestionthree" class="candle-modal-inside" style="display:none">
-                <div class="candle-modal-top-question">
-                    <div class="button-holder">
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                <div id="candlequizquestionthree" class="candle-modal-inside" style="display:none">
+                    <div class="candle-modal-top-question">
+                        <div class="button-holder">
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        </div>
+                        <h3>Where do you <strong>plan to use</strong> your candle the most?</h3>
+                        <i>Click an Option below</i>
                     </div>
-                    <h3>Where do you <strong>plan to use</strong> your candle the most?</h3>
-                    <i>Click an Option below</i>
-                </div>
-                <div class="candle-modal-bottom-anwser">
-                    <div class="positional-div">
-                        <button class="button-option" data-question="location" data-value="Bedroom" onclick="questionthreenext()">Bedroom</button>
-                        <button class="button-option" data-question="location" data-value="Living Room" onclick="questionthreenext()">Living Room</button>
+                    <div class="candle-modal-bottom-anwser">
+                        <div class="positional-div">
+                            <button class="button-option" data-question="location" data-value="Bedroom" onclick="questionthreenext()">Bedroom</button>
+                            <button class="button-option" data-question="location" data-value="Living Room" onclick="questionthreenext()">Living Room</button>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="candlequizquestionfour" class="candle-modal-inside" style="display:none">
-                <div class="candle-modal-top-question">
-                    <div class="button-holder">
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
-                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                <div id="candlequizquestionfour" class="candle-modal-inside" style="display:none">
+                    <div class="candle-modal-top-question">
+                        <div class="button-holder">
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                            <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        </div>
+                        <h3>When do you enjoy lighting candles the most?</h3>
+                        <i>Click an Option below</i>
                     </div>
-                    <h3>When do you enjoy lighting candles the most?</h3>
-                    <i>Click an Option below</i>
-                </div>
-                <div class="candle-modal-bottom-anwser">
-                    <div class="positional-div">
-                        <button class="button-option" data-question="time" data-value="Evening" onclick="questionfournext()">Evening</button>
-                        <button class="button-option" data-question="time" data-value="Late Night" onclick="questionfournext()">Late Night</button>
+                    <div class="candle-modal-bottom-anwser">
+                        <div class="positional-div">
+                            <button class="button-option" data-question="time" data-value="Evening" onclick="questionfournext()">Evening</button>
+                            <button class="button-option" data-question="time" data-value="Late Night" onclick="questionfournext()">Late Night</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="countdown" style="display: none;">
+
+        </div>
+        <div id="candleResult" style="display: none;">
+            <img id="candleImage" src="" alt="Candle Image" style="display: none;">
+            <div style="margin-left:10px;">
+                <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
+                <h3 id="candlePrice"></h3>
+                <div id="star-contanier">
+                    <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                    <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                    <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                    <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p id="candleNumber"></p>
+                </div>
+                <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
+                <button class="add-to-cart-button"><i class="fa-solid fa-bag-shopping"></i>Add</button>
+            </div>
+            
+        </div>
     </div>
 
-    <div id="candleResult" style="display: none;">
-        <img id="candleImage" src="" alt="Candle Image" style="display: none;">
-        <div style="margin-left:10px;">
-            <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
-            <h3 id="candlePrice"></h3>
-            <div id="star-contanier">
-                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
-                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
-                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
-                <i class="fa-solid fa-star" style="color: #D2AC47;"></i>
-                <i class="fa-regular fa-star"></i>
-                <p id="candleNumber"></p>
-            </div>
-            <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
-            <button class="add-to-cart-button"><i class="fa-solid fa-bag-shopping"></i>Add</button>
-        </div>
-        
-    </div>
+
+
     <script src="script.js"></script>
 
 </body>

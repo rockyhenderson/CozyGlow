@@ -54,6 +54,7 @@ function submitQuiz() {
         $("#candleImage").attr("src", matchingCandle.candleimage);
         $("#candleNumber").text(matchingCandle.reviewNumber);
         $("#candlePrice").text(matchingCandle.price);
+        $("#countdown").hide();
     } else {
         console.log("No matching candle found.");
         // Optionally, update the webpage to indicate no match was found
@@ -95,5 +96,12 @@ function questionthreenext() {
 function questionfournext() {
     $("#candlequizquestionfour").hide();
     $("#candle-modal").hide();
+    $("#countdown").show();
     setTimeout(submitQuiz, 3000);
+}
+function candleModalPopup(){
+    $("#candle-modal-popup").show();
+}
+function closeChooseCandleModal(){
+    $("#candle-modal-popup").hide();
 }
