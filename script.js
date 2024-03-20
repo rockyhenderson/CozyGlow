@@ -103,7 +103,13 @@ function candleModalPopup(){
     $("#candle-modal-popup").show();
     $("#candleResult").hide();
     $("#candle-modal-questions").show();
+    $('html, body').scrollTop(0);
+    $('body').css('overflow-y', 'hidden');
+
+
 }
 function closeChooseCandleModal(){
     $("#candle-modal-popup").hide();
+    $('body').css('overflow-y', 'scroll');
+
 }
