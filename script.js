@@ -1,7 +1,22 @@
 var candlesData = []; // Declare globally to ensure accessibility
 
+var userSelections = {
+    reason: '',
+    scent: '',
+    location: '',
+    time: ''
+};
+
 $(document).ready(function () {
-    // Fetch the candles JSON data
+    $('.button-option').click(function () {
+        var question = $(this).data('question');
+        var value = $(this).data('value');
+        
+        // Update user selections
+        userSelections[question] = value;
+        console.log('Updated Selection:', question, value);
+        console.log('Current User Selections:', userSelections)
+        });
     $.ajax({
         url: 'candles.json',
         type: 'GET',
@@ -17,18 +32,12 @@ $(document).ready(function () {
 });
 
 function submitQuiz() {
-    var userAnswers = [];
-
-    const reason = document.querySelector('input[name="reason"]:checked').value;
-    console.log(reason)
-    userAnswers.push(reason);
-
-    const scent = document.querySelector('input[name="scent"]:checked').value;
-    userAnswers.push(scent);
-    const location = document.querySelector('input[name="location"]:checked').value;
-    userAnswers.push(location);
-    const time = document.querySelector('input[name="time"]:checked').value;
-    userAnswers.push(time);
+    var userAnswers = [
+        userSelections.reason,
+        userSelections.scent,
+        userSelections.location,
+        userSelections.time
+    ];
 
     console.log(userAnswers);
 
@@ -78,5 +87,6 @@ function questionthreenext() {
 }
 function questionfournext() {
     document.getElementById("candlequizquestionfour").style.display = "none";
-    submitQuiz()
+    document.getElementById("candle-modal").style.display = "none";
+    setTimeout(submitQuiz, 3000);
 }

@@ -5,61 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy Soul</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/71e68f6e96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Candle Preference Quiz</h2>
     <div id=candle-modal>
-        <form id="candleQuiz">
+        <div id="candleQuiz">
             <div id="candlequizquestionone" class="candle-modal-inside">
                 <div class="candle-modal-top-question">
+                    <div class="button-holder">
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                    </div>
                     <h3>What's the main reason you're interested in a candle?</h3>
+                    <i>Click an Option below</i>
                 </div>
                 <div class="candle-modal-bottom-anwser">
                     <div class="positional-div">
-                        <input type="button" class="button-option" id="relaxation" name="reason" value="Relaxation" onclick="questiononenext()">
-                        <input type="button" class="button-option" id="decoration" name="reason" value="Decoration" onclick="questiononenext()">
+                        <button class="button-option" data-question="reason" data-value="Relaxation" onclick="questiononenext()">Relaxation</button>
+                        <button class="button-option" data-question="reason" data-value="Decoration" onclick="questiononenext()">Decoration</button>
+
                     </div>
                 </div>
             </div>
 
             <div id="candlequizquestiontwo" class="candle-modal-inside" style="display:none">
                 <div class="candle-modal-top-question">
+                    <div class="button-holder">
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                    </div>
                     <h3>Which scent type do you prefer?</h3>
+                    <i>Click an Option below</i>
                 </div>
                 <div class="candle-modal-bottom-anwser">
                     <div class="positional-div">
-                        <input type="button" class="button-option" id="floral" name="scent" value="Floral" onclick="questiontwonext()">
-                        <input type="button" class="button-option" id="woody" name="scent" value="Woody" onclick="questiontwonext()">
+                        <button class="button-option" data-question="scent" data-value="Floral" onclick="questiontwonext()">Floral</button>
+                        <button class="button-option" data-question="scent" data-value="Woody" onclick="questiontwonext()">Woody</button>
                     </div>
                 </div>
             </div>
             <div id="candlequizquestionthree" class="candle-modal-inside" style="display:none">
                 <div class="candle-modal-top-question">
-                    <h3>Where do you plan to use your candle the most?</h3>
+                    <div class="button-holder">
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-regular fa-circle" style="color:#D2AC47"></i>
+                    </div>
+                    <h3>Where do you <strong>plan to use</strong> your candle the most?</h3>
+                    <i>Click an Option below</i>
                 </div>
                 <div class="candle-modal-bottom-anwser">
                     <div class="positional-div">
-                        <input type="button" class="button-option" id="bedroom" name="location" value="Bedroom" onclick="questionthreenext()">
-                        <input type="button" class="button-option" id="livingRoom" name="location" value="Living Room" onclick="questionthreenext()">
+                        <button class="button-option" data-question="location" data-value="Bedroom" onclick="questionthreenext()">Bedroom</button>
+                        <button class="button-option" data-question="location" data-value="Living Room" onclick="questionthreenext()">Living Room</button>
+
                     </div>
                 </div>
             </div>
             <div id="candlequizquestionfour" class="candle-modal-inside" style="display:none">
                 <div class="candle-modal-top-question">
+                    <div class="button-holder">
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                        <i class="fa-solid fa-circle" style="color:#D2AC47"></i>
+                    </div>
                     <h3>When do you enjoy lighting candles the most?</h3>
+                    <i>Click an Option below</i>
                 </div>
                 <div class="candle-modal-bottom-anwser">
                     <div class="positional-div">
-                        <input type="button" class="button-option" id="evening" name="time" value="Evening" onclick="questionfournext()">
-                        <input type="button" class="button-option" id="lateNight" name="time" value="Late Night" onclick="questionfournext()">
+                        <button class="button-option" data-question="time" data-value="Evening" onclick="questionfournext()">Evening</button>
+                        <button class="button-option" data-question="time" data-value="Late Night" onclick="questionfournext()">Late Night</button>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
     <div id="candleResult">
