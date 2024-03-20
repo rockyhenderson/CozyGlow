@@ -15,6 +15,33 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+/* hero section */
+#hero-section{
+    height:75vh;
+    background-color: gold;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0px;
+}
+
+
+
+
+/* seasonal offers section */
+#season-offers{
+    background-color: rebeccapurple;
+    height:40vh;
+}
+
+
+
+
+
+
+
+
+
+/* quiz modal */
 .button-option{
     width:350px;
     font-size: 40px;
@@ -127,4 +154,15 @@ body{
     right:0;
     margin-top:30px;
     margin-right:20px;
+}
+#right-for-you-candle{
+    background-color: purple;
+    height:20vh;
+}
+
+
+/* text-section */
+#text-section{
+    background-color: #D2AC47;
+    height:100vh;
 }
