@@ -34,6 +34,7 @@ function submitQuiz() {
 
     // Update the webpage with the matching candle's details
     if (matchingCandle) {
+        document.getElementById("candleImage").style.display = "block"
         console.log("IT WORKS!!!")
         $("#candleName").text(matchingCandle.candlename);
         $("#candleDescription").text(matchingCandle.candledescription);
