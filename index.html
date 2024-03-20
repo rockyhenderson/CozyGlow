@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <h2>Candle Preference Quiz</h2>
 
-   
-    <body class="m-0 p-0 overflow-x-hidden w-screen h-full">
-
-        <div class="w-full h-5/6" id="hero-section">
-            <img src="DOG.jpg" alt="Background" class="absolute top-0 left-0 w-full h-5/6 object-cover">
-            <div class="absolute top-0 left-0 w-full h-5/6 flex items-center justify-center">
-                <div class="">
-                    <p class="text-white text-8xl font-bold">Cozy Glow</p>
-                    <div class="w-full flex justify-center mt-6">
-                        <button class="hero-btn mx-4">CLICK ME</button>
-                        <button class="hero-btn mx-4">CLICK ME</button>
-                    </div>
-                </div>
-            </div>
+    <form id="candleQuiz">
+        <div id="candlequizquestionone">
+            <p>What's the main reason you're interested in a candle?</p>
+            <input type="radio" id="relaxation" name="reason" value="Relaxation" onclick="questiononenext()">
+            <label for="relaxation">Relaxation</label><br>
+            <input type="radio" id="decoration" name="reason" value="Decoration" onclick="questiononenext()">
+            <label for="decoration">Decoration</label><br>
         </div>
-        <div class="w-full" id="what-you-loved">
-            <div class="flex justify-center">
-                <h1 class="text-7xl font-bold">What you loved</h1>
-            </div>
+        <div id="candlequizquestiontwo" style="display:none;">
+            <p>Which scent type do you prefer?</p>
+            <input type="radio" id="floral" name="scent" value="Floral" onclick="questiontwonext()">
+            <label for="floral">Floral</label><br>
+            <input type="radio" id="woody" name="scent" value="Woody" onclick="questiontwonext()">
+            <label for="woody">Woody</label><br>
         </div>
 
-    </body>
-    
-    
+        <div id="candlequizquestionthree" style="display:none;">
+            <p>Where do you plan to use your candle the most?</p>
+            <input type="radio" id="bedroom" name="location" value="Bedroom" onclick="questionthreenext()">
+            <label for="bedroom">Bedroom</label><br>
+            <input type="radio" id="livingRoom" name="location" value="Living Room" onclick="questionthreenext()">
+            <label for="livingRoom">Living Room</label><br>
+        </div>
+        <div id="candlequizquestionfour" style="display:none;">
+            <p>When do you enjoy lighting candles the most?</p>
+            <input type="radio" id="evening" name="time" value="Evening" onclick="questionfournext()">
+            <label for="evening">Evening</label><br>
+            <input type="radio" id="lateNight" name="time" value="Late Night" onclick="questionfournext()">
+            <label for="lateNight">Late Night</label><br>
+        </div>
+    </form>
+    <div id="candleResult">
+        <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
+        <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
+        <img id="candleImage" src="" alt="Candle Image"> <!-- Image of the candle will be displayed here -->
+    </div>
+    <script src="script.js"></script>
 
 </body>
+
+
 </html>
