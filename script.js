@@ -20,7 +20,9 @@ function submitQuiz() {
     var userAnswers = [];
 
     const reason = document.querySelector('input[name="reason"]:checked').value;
+    console.log(reason)
     userAnswers.push(reason);
+
     const scent = document.querySelector('input[name="scent"]:checked').value;
     userAnswers.push(scent);
     const location = document.querySelector('input[name="location"]:checked').value;

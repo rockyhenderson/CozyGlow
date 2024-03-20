@@ -12,42 +12,61 @@
 
 <body>
     <h2>Candle Preference Quiz</h2>
+    <div id=candle-modal>
+        <form id="candleQuiz">
+            <div id="candlequizquestionone" class="candle-modal-inside">
+                <div class="candle-modal-top-question">
+                    <h3>What's the main reason you're interested in a candle?</h3>
+                </div>
+                <div class="candle-modal-bottom-anwser">
+                    <div class="positional-div">
+                        <input type="button" class="button-option" id="relaxation" name="reason" value="Relaxation" onclick="questiononenext()">
+                        <input type="button" class="button-option" id="decoration" name="reason" value="Decoration" onclick="questiononenext()">
+                    </div>
+                </div>
+            </div>
 
-    <form id="candleQuiz">
-        <div id="candlequizquestionone">
-            <p>What's the main reason you're interested in a candle?</p>
-            <input type="radio" id="relaxation" name="reason" value="Relaxation" onclick="questiononenext()">
-            <label for="relaxation">Relaxation</label><br>
-            <input type="radio" id="decoration" name="reason" value="Decoration" onclick="questiononenext()">
-            <label for="decoration">Decoration</label><br>
-        </div>
-        <div id="candlequizquestiontwo" style="display:none;">
-            <p>Which scent type do you prefer?</p>
-            <input type="radio" id="floral" name="scent" value="Floral" onclick="questiontwonext()">
-            <label for="floral">Floral</label><br>
-            <input type="radio" id="woody" name="scent" value="Woody" onclick="questiontwonext()">
-            <label for="woody">Woody</label><br>
-        </div>
+            <div id="candlequizquestiontwo" class="candle-modal-inside" style="display:none">
+                <div class="candle-modal-top-question">
+                    <h3>Which scent type do you prefer?</h3>
+                </div>
+                <div class="candle-modal-bottom-anwser">
+                    <div class="positional-div">
+                        <input type="button" class="button-option" id="floral" name="scent" value="Floral" onclick="questiontwonext()">
+                        <input type="button" class="button-option" id="woody" name="scent" value="Woody" onclick="questiontwonext()">
+                    </div>
+                </div>
+            </div>
+            <div id="candlequizquestionthree" class="candle-modal-inside" style="display:none">
+                <div class="candle-modal-top-question">
+                    <h3>Where do you plan to use your candle the most?</h3>
+                </div>
+                <div class="candle-modal-bottom-anwser">
+                    <div class="positional-div">
+                        <input type="button" class="button-option" id="bedroom" name="location" value="Bedroom" onclick="questionthreenext()">
+                        <input type="button" class="button-option" id="livingRoom" name="location" value="Living Room" onclick="questionthreenext()">
+                    </div>
+                </div>
+            </div>
+            <div id="candlequizquestionfour" class="candle-modal-inside" style="display:none">
+                <div class="candle-modal-top-question">
+                    <h3>When do you enjoy lighting candles the most?</h3>
+                </div>
+                <div class="candle-modal-bottom-anwser">
+                    <div class="positional-div">
+                        <input type="button" class="button-option" id="evening" name="time" value="Evening" onclick="questionfournext()">
+                        <input type="button" class="button-option" id="lateNight" name="time" value="Late Night" onclick="questionfournext()">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
-        <div id="candlequizquestionthree" style="display:none;">
-            <p>Where do you plan to use your candle the most?</p>
-            <input type="radio" id="bedroom" name="location" value="Bedroom" onclick="questionthreenext()">
-            <label for="bedroom">Bedroom</label><br>
-            <input type="radio" id="livingRoom" name="location" value="Living Room" onclick="questionthreenext()">
-            <label for="livingRoom">Living Room</label><br>
-        </div>
-        <div id="candlequizquestionfour" style="display:none;">
-            <p>When do you enjoy lighting candles the most?</p>
-            <input type="radio" id="evening" name="time" value="Evening" onclick="questionfournext()">
-            <label for="evening">Evening</label><br>
-            <input type="radio" id="lateNight" name="time" value="Late Night" onclick="questionfournext()">
-            <label for="lateNight">Late Night</label><br>
-        </div>
-    </form>
     <div id="candleResult">
         <h2 id="candleName"></h2> <!-- Name of the candle will be displayed here -->
         <p id="candleDescription"></p> <!-- Description of the candle will be displayed here -->
-        <img id="candleImage" src="" alt="Candle Image" style="display: none;"> <!-- Image of the candle will be displayed here -->
+        <img id="candleImage" src="" alt="Candle Image" style="display: none;">
+        <!-- Image of the candle will be displayed here -->
     </div>
     <script src="script.js"></script>
 
