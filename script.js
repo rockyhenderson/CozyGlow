@@ -7,6 +7,11 @@ var userSelections = {
     time: ''
 };
 
+
+
+
+
+
 $(document).ready(function () {
     $('.button-option').click(function () {
         var question = $(this).data('question');
