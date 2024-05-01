@@ -1,3 +1,4 @@
+var state = "m";
 var candlesData = []; // Declare globally to ensure accessibility
 
 var userSelections = {
@@ -29,26 +30,217 @@ var userSelections = {
 //   // Set interval to change the background image every 5 seconds
 //   setInterval(changeBackgroundImage, 5000);
 
+function mangooption(){
+    state = "m"
+    var mangoElements = document.getElementsByClassName("mangoul");
+    for (var i = 0; i < mangoElements.length; i++) {
+      mangoElements[i].style.color = "#FFFFFF"; 
+    }
+    var appleElements = document.getElementsByClassName("appleul");
+    for (var i = 0; i < appleElements.length; i++) {
+      appleElements[i].style.color = "#413b45"; 
+    } 
+    var guavaElements = document.getElementsByClassName("guavaul");
+    for (var i = 0; i < guavaElements.length; i++) {
+      guavaElements[i].style.color = "#413b45"; 
+    }
+    var peachElements = document.getElementsByClassName("peachul");
+    for (var i = 0; i < peachElements.length; i++) {
+      peachElements[i].style.color = "#413b45"; 
+    }
+    for (let i = 1; i <= 5; i++) {
+        let mangoElements = document.getElementsByClassName("mango" + i);
+    
+        for (let j = 0; j < mangoElements.length; j++) {
+          mangoElements[j].style.backgroundImage = "url('img/mango/mango" + i + ".webp')";
+        }
+    }
+
+    var elements = document.getElementsByClassName("product-image");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundImage = "url('img/mango/mango1.webp')";
+    }
 
 
-function changemango1(){
-    document.getElementById("product-image").style.backgroundImage = "url('img/mango/mango1.webp')";
-}
-function changemango2(){
-    document.getElementById("product-image").style.backgroundImage = "url('img/mango/mango2.webp')";
+document.getElementById("secret-daddy-container-mango").style.display = "block"
+document.getElementById("secret-daddy-container-apple").style.display = "none"
+document.getElementById("secret-daddy-container-guava").style.display = "none"
+document.getElementById("secret-daddy-container-peach").style.display = "none"
+
+const newColor = "#fec844"
+document.documentElement.style.setProperty('--user-color', newColor);
 }
 
-function changemango3(){
-    document.getElementById("product-image").style.backgroundImage = "url('img/mango/mango3.webp')";
+
+
+function appleoption(){
+    state = "a"
+    var mangoElements = document.getElementsByClassName("mangoul");
+    for (var i = 0; i < mangoElements.length; i++) {
+      mangoElements[i].style.color = "#413b45"; 
+    }
+    var appleElements = document.getElementsByClassName("appleul");
+    for (var i = 0; i < appleElements.length; i++) {
+      appleElements[i].style.color = "#FFFFFF"; 
+    } 
+    var guavaElements = document.getElementsByClassName("guavaul");
+    for (var i = 0; i < guavaElements.length; i++) {
+      guavaElements[i].style.color = "#413b45"; 
+    }
+    var peachElements = document.getElementsByClassName("peachul");
+    for (var i = 0; i < peachElements.length; i++) {
+      peachElements[i].style.color = "#413b45"; 
+    }
+
+
+    for (let i = 1; i <= 5; i++) {
+        let mangoElements = document.getElementsByClassName("mango" + i);
+    
+        for (let j = 0; j < mangoElements.length; j++) {
+          mangoElements[j].style.backgroundImage = "url('img/apple/apple" + i + ".webp')";
+        }
+    }
+
+    var elements = document.getElementsByClassName("product-image");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundImage = "url('img/apple/apple1.webp')";
+    }
+
+
+    document.getElementById("secret-daddy-container-mango").style.display = "none"
+    document.getElementById("secret-daddy-container-apple").style.display = "block"
+    document.getElementById("secret-daddy-container-guava").style.display = "none"
+    document.getElementById("secret-daddy-container-peach").style.display = "none"
+
+    const newColor = "#ff6347"
+    document.documentElement.style.setProperty('--user-color', newColor);
 }
 
-function changemango4(){
-    document.getElementById("product-image").style.backgroundImage = "url('img/mango/mango4.webp')";
+
+
+function guavaoption(){
+    state = "g"
+    var mangoElements = document.getElementsByClassName("mangoul");
+    for (var i = 0; i < mangoElements.length; i++) {
+      mangoElements[i].style.color = "#413b45"; 
+    }
+    var appleElements = document.getElementsByClassName("appleul");
+    for (var i = 0; i < appleElements.length; i++) {
+      appleElements[i].style.color = "#413b45"; 
+    } 
+    var guavaElements = document.getElementsByClassName("guavaul");
+    for (var i = 0; i < guavaElements.length; i++) {
+      guavaElements[i].style.color = "#FFFFFF"; 
+    }
+    var peachElements = document.getElementsByClassName("peachul");
+    for (var i = 0; i < peachElements.length; i++) {
+      peachElements[i].style.color = "#413b45"; 
+    }
+
+    for (let i = 1; i <= 5; i++) {
+        let mangoElements = document.getElementsByClassName("mango" + i);
+    
+        for (let j = 0; j < mangoElements.length; j++) {
+          mangoElements[j].style.backgroundImage = "url('img/guava/guava" + i + ".webp')";
+        }
+    }
+
+
+    var elements = document.getElementsByClassName("product-image");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundImage = "url('img/guava/guava1.webp')";
+    }
+
+
+    document.getElementById("secret-daddy-container-mango").style.display = "none"
+    document.getElementById("secret-daddy-container-apple").style.display = "none"
+    document.getElementById("secret-daddy-container-guava").style.display = "block"
+    document.getElementById("secret-daddy-container-peach").style.display = "none"
+
+    const newColor = "#ADFF2F"
+    document.documentElement.style.setProperty('--user-color', newColor);
 }
 
-function changemango5(){
-    document.getElementById("product-image").style.backgroundImage = "url('img/mango/mango5.webp')";
+
+
+function peachoption(){
+    state = "p"
+    var mangoElements = document.getElementsByClassName("mangoul");
+    for (var i = 0; i < mangoElements.length; i++) {
+      mangoElements[i].style.color = "#413b45"; 
+    }
+    var appleElements = document.getElementsByClassName("appleul");
+    for (var i = 0; i < appleElements.length; i++) {
+      appleElements[i].style.color = "#413b45"; 
+    } 
+    var guavaElements = document.getElementsByClassName("guavaul");
+    for (var i = 0; i < guavaElements.length; i++) {
+      guavaElements[i].style.color = "#413b45"; 
+    }
+    var peachElements = document.getElementsByClassName("peachul");
+    for (var i = 0; i < peachElements.length; i++) {
+      peachElements[i].style.color = "#FFFFFF"; 
+    }
+
+    for (let i = 1; i <= 5; i++) {
+        let mangoElements = document.getElementsByClassName("mango" + i);
+    
+        for (let j = 0; j < mangoElements.length; j++) {
+          mangoElements[j].style.backgroundImage = "url('img/peach/peach" + i + ".webp')";
+        }
+    }
+
+    var elements = document.getElementsByClassName("product-image");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundImage = "url('img/peach/peach1.webp')";
+    }
+
+
+
+    document.getElementById("secret-daddy-container-mango").style.display = "none"
+    document.getElementById("secret-daddy-container-apple").style.display = "none"
+    document.getElementById("secret-daddy-container-guava").style.display = "none"
+    document.getElementById("secret-daddy-container-peach").style.display = "block"
+
+    const newColor = "#ff9a8a"
+    document.documentElement.style.setProperty('--user-color', newColor);
+    }
+
+
+
+
+function changeFruit(index) {
+    var images = document.getElementsByClassName("product-image");
+
+    var baseUrl;
+    switch (state) {
+        case 'm':
+            baseUrl = "url('img/mango/mango";
+            break;
+        case 'a':
+            baseUrl = "url('img/apple/apple";
+            break;
+        case 'g':
+            baseUrl = "url('img/guava/guava";
+            break;
+        case 'p':
+            baseUrl = "url('img/peach/peach";
+            break;
+        default:
+            console.error("Invalid state:", state);
+            return;
+    }
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.backgroundImage = baseUrl + index + ".webp')";
+    }
 }
+
+
 
 
 
@@ -123,7 +315,7 @@ function submitQuiz() {
     }
 }
 
-// Make sure this is correctly cased as used in the `submitQuiz` function
+
 function determineCandle(userAnswers) {
     var userPreferences = {
         mood: userAnswers[0],

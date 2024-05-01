@@ -1,2 +1,4 @@
 quiz and cookie as popup!
 test
+push title and sub nav closer.
+add iamges on left side and mess with text and button
