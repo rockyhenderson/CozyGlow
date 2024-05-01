@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Grid Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="grid-container">
-        <div class="left-side">Section 1</div>
-        <div class="right-top">Section 2.1</div>
-        <div class="right-bottom">Section 2.2</div>
+        <div class="left-side">
+            <div class="product-image"></div>
+        </div>
+        <div class="right-top">
+            <div class="title">
+                <h1>MANGO</h1>
+            </div>
+            <nav class="sub-navbar">
+                <ul>
+                    One
+                </ul>
+                <ul>
+                    Two
+                </ul>
+                <ul>
+                    Three
+                </ul>
+                <ul>
+                    Four
+                </ul>
+            </nav>
+
+        </div>
+        <div class="right-bottom">Section 2.2 (Desc and Button)</div>
     </div>
+    <div class="product-section">
+        Section 3 (Products)
+    </div>
+    <div class="lore-section">
+        <div class="lore-top">
+            <div class="lore-top-left">Section 4.1.1 Image</div>
+            <div class="lore-top-right">Section 4.1.2 Content</div>
+        </div>
+        <div class="lore-bottom">
+            <div class="lore-bottom-left">Section 4.2.1 Content</div>
+            <div class="lore-bottom-right">Section 4.2.2 Image </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="padding_4x">
+        <div class="flex">
+            <section class="flex-content padding_1x">
+                <h3>Pages</h3>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+                <a href="#">Location</a>
+            </section>
+            <section class="flex-content padding_1x">
+                <h3>Resources</h3>
+                <a href="#">Modern Slavery Statement</a>
+                <a href="#">How we stay econminmical</a>
+                <a href="#">Legal Stuff</a>
+                <a href="#">I dont know</a>
+                <a href="#">Filler :(</a>
+            </section>
+            <section class="flex-content padding_1x">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers,</p>
+                <fieldset class="fixed_flex">
+                    <input type="email" name="newsletter" placeholder="Your Email Address" style="color:white;">
+                    <button class="btn btn_2">Subscribe</button>
+                </fieldset>
+            </section>
+        </div>
+        <div class="flex">
+            <section class="flex-content padding_1x">
+                <p>Copyright ©2024 All rights reserved || Jack Henderson</p>
+            </section>
+            <section class="flex-content padding_1x">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </section>
+        </div>
+    </footer>
+
+
+
+
 </body>
+
 </html>
