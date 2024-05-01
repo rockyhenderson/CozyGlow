@@ -111,6 +111,7 @@ html {
 }
 
 .add-to-bask-button {
+  margin-top:10px;
   width: 280px;
   height: 64px;
   border: 1px solid var(--secondary);
@@ -153,7 +154,9 @@ b {
   justify-content: space-between;
   margin-right: 3.5vw;
 }
-
+ul:hover, button:hover, .caro-image-rb:hover, .fa-bars:hover, .arrow:hover {
+  cursor: pointer;
+}
 .caro-image-rb {
   max-height:100px;
   max-width: 110px;
@@ -161,7 +164,7 @@ b {
   background-color: blue;
   border: 1px var(--secondary) solid;
   border-radius: 20px;
-  margin-bottom:5px;
+  margin-bottom:15px;
 }
 
 .lore-section {
@@ -281,7 +284,6 @@ ul:hover {
 }
 
 .navbar {
-  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,26 +291,21 @@ ul:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
-  margin-top: 5vh;
-  padding-bottom: 5vh;
+  margin-top: 10vh;
 }
 .logo {
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 55px;
   width: 70px;
-  text-align: center;
-  font-size: 20px;
-  background-color: var(--primary);
-  border-radius: 10px;
+  background-image: url(img/fillerlogo.svg);
 }
 .menu {
   height: 40px;
   width: 40px;
 }
-
-@media (max-width: 768px) {
+.arrow{
+  display: none;
+}
+@media (max-width: 1050px) {
   .grid-container {
     grid-template-columns: 1fr;
     /* One column */
@@ -332,12 +329,68 @@ ul:hover {
     background-position: center;
     background-size: cover;
   }
-
+  .arrow{
+    display: block;
+  }
+  h1{
+    margin-left:0;
+  }
   .title {
     margin-left: 0 !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .logo{
+    display: none;
+  }
+  .sub-navbar{
+    display: none;
+  }
+  .right-top{
+    height:13vh;
+  }
+  .right-top h1{
+    font-size:15vw;
+    
+  }
+  .navbar{
+    flex-direction: row-reverse;
+    margin-top: 5vh;
+  }
+  .right-bottom{
+    flex-direction: column;
+  }
+  .image-caro{
+      height: 100%;
+      width: 80vw;
+      flex-direction: row;
+      padding-left:15px;
+  }
+  .caro-image-rb{
+    max-height:150px;
+    height:150px;
+    margin-bottom: 0;
+    margin-right:15px;
+  }
+  .product-section{
+    margin-top:210px;
   }
 }
-
+@media (max-width: 730px) {
+  .right-top{
+    height:10vh;
+  }
+}
+@media (max-width: 650px) {
+  .right-top{
+    height:8vh;
+  }
+  .navbar{
+    flex-direction: row-reverse;
+    margin-top: 3vh;
+  }
+}
 /***************************
                FOOTER
 ****************************/

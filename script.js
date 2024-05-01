@@ -7,28 +7,11 @@ var userSelections = {
     location: '',
     time: ''
 };
+function producdropdown(){
+    alert("hi")
+}
 
-// // Array of image URLs
-// const images = [
-//     "url('img/mango/mango1.webp')",
-//     "url('img/mango/mango2.webp')",
-//     "url('img/mango/mango3.webp')",
-//     "url('img/mango/mango4.webp')",
-//     "url('img/mango/mango5.webp')"
-//   ];
-  
-//   let currentIndex = 0; // Start with the first image
-  
-//   function changeBackgroundImage() {
-//     const element = document.getElementById("product-image");
-//     // Set the image
-//     element.style.backgroundImage = images[currentIndex];
-//     // Move to the next image index or loop back to the start
-//     currentIndex = (currentIndex + 1) % images.length;
-//   }
-  
-//   // Set interval to change the background image every 5 seconds
-//   setInterval(changeBackgroundImage, 5000);
+
 
 function mangooption(){
     state = "m"
