@@ -7,34 +7,59 @@
     <title>Responsive Grid Layout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="grid-container">
         <div class="left-side">
-            <div class="product-image"></div>
+            <div id="product-image"></div>
         </div>
         <div class="right-top">
-            <div class="title">
-                <h1>MANGO</h1>
+            <div class="test">
+                <div class="title">
+                    <h1>MANGO</h1>
+                </div>
+                <nav class="sub-navbar">
+                    <ul>
+                        Mango
+                    </ul>
+                    <ul>
+                        Apple
+                    </ul>
+                    <ul>
+                        Guava
+                    </ul>
+                    <ul>
+                        Peach
+                    </ul>
+                </nav>
+
             </div>
-            <nav class="sub-navbar">
-                <ul>
-                    One
-                </ul>
-                <ul>
-                    Two
-                </ul>
-                <ul>
-                    Three
-                </ul>
-                <ul>
-                    Four
-                </ul>
-            </nav>
+        </div>
+        <div class="right-bottom">
+            <div class="image-caro">
+                <div class="caro-image-rb mango1" onclick="changemango1()"></div>
+                <div class="caro-image-rb mango2" onclick="changemango2()"></div>
+                <div class="caro-image-rb mango3" onclick="changemango3()"></div>
+                <div class="caro-image-rb mango4" onclick="changemango4()"></div>
+                <div class="caro-image-rb mango5" onclick="changemango5()"></div>
+            </div>
+            <p>
+                The <b>Mango Candle</b> infuses any room with the lush sweetness of a ripe mango basking in the tropical sun.
+                Crafted from high-quality wax, this candle emits a vibrant, juicy aroma that is both uplifting and
+                refreshing. As the candle burns, it releases layers of complex scents, beginning with a top note of
+                fresh mango and citrus, followed by subtle hints of peach and coconut, evoking a serene, summery
+                beachscape. The warm glow of the candle creates a cozy atmosphere, making it perfect for evenings when
+                you need a touch of relaxation. Each candle is poured into a beautifully designed glass jar that not
+                only enhances the aesthetic of your home but also promises long-lasting fragrance, transforming everyday
+                spaces into a fragrant tropical paradise.</p>
+            <button class="add-to-bask-button">Add to Basket</button>
 
         </div>
-        <div class="right-bottom">Section 2.2 (Desc and Button)</div>
     </div>
     <div class="product-section">
         Section 3 (Products)
