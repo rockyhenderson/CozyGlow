@@ -17,7 +17,23 @@ html {
   background-color: var(--primary);
   color: white;
 }
+.mangoul:hover {
+  color: #fec844 !important;
+}
+.mangoul{
+  color:#fec844;
+}
+.peachul:hover {
+color: #ff9a8a !important;
+}
 
+.appleul:hover {
+color:#ff6347 !important;
+}
+
+.guavaul:hover {
+color:#ADFF2F !important;
+}
 .grid-container {
   display: grid;
   height: 100vh;
@@ -262,26 +278,7 @@ ul {
   color: var(--sub-primary);
 }
 
-ul:hover {
-  text-underline-offset: 5px;
-  text-decoration-line: underline;
-}
 
-.mangoul {
-  text-decoration-color: #fec844;
-}
-
-.peachul {
-  text-decoration-color: #ff9a8a;
-}
-
-.appleul {
-  text-decoration-color:#ff6347;
-}
-
-.guavaul {
-  text-decoration-color:#ADFF2F;
-}
 
 .navbar {
   display: flex;
@@ -336,6 +333,7 @@ ul:hover {
     margin-left:0;
   }
   .title {
+    margin-top:2vh;
     margin-left: 0 !important;
     text-align: center;
     display: flex;

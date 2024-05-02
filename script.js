@@ -10,14 +10,11 @@ var userSelections = {
 function producdropdown(){
     alert("hi")
 }
-
-
-
 function mangooption(){
     state = "m"
     var mangoElements = document.getElementsByClassName("mangoul");
     for (var i = 0; i < mangoElements.length; i++) {
-      mangoElements[i].style.color = "#FFFFFF"; 
+      mangoElements[i].style.color = "#fec844"; 
     }
     var appleElements = document.getElementsByClassName("appleul");
     for (var i = 0; i < appleElements.length; i++) {
@@ -65,7 +62,7 @@ function appleoption(){
     }
     var appleElements = document.getElementsByClassName("appleul");
     for (var i = 0; i < appleElements.length; i++) {
-      appleElements[i].style.color = "#FFFFFF"; 
+      appleElements[i].style.color = "#ff9a8a"; 
     } 
     var guavaElements = document.getElementsByClassName("guavaul");
     for (var i = 0; i < guavaElements.length; i++) {
@@ -115,7 +112,7 @@ function guavaoption(){
     } 
     var guavaElements = document.getElementsByClassName("guavaul");
     for (var i = 0; i < guavaElements.length; i++) {
-      guavaElements[i].style.color = "#FFFFFF"; 
+      guavaElements[i].style.color = "#ff6347"; 
     }
     var peachElements = document.getElementsByClassName("peachul");
     for (var i = 0; i < peachElements.length; i++) {
@@ -165,7 +162,7 @@ function peachoption(){
     }
     var peachElements = document.getElementsByClassName("peachul");
     for (var i = 0; i < peachElements.length; i++) {
-      peachElements[i].style.color = "#FFFFFF"; 
+      peachElements[i].style.color = "#ADFF2F"; 
     }
 
     for (let i = 1; i <= 5; i++) {
