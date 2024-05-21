@@ -55,7 +55,9 @@ const newColor = "#fec844"
 document.documentElement.style.setProperty('--user-color', newColor);
 }
 
-
+function hidecookies(){
+  document.getElementById("cookie-box").style.display = "none";
+}
 
 function appleoption(){
     state = "a"

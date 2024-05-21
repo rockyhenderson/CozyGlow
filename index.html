@@ -344,67 +344,72 @@
       </script>
     </div>
       <div class="lore-top">
-        <div class="tile tile1">
-          <h2>Story</h2>
-        </div>
-        <div class="tile tile2 tile2open selected-tile">
-          <div class="inner-tile">
-            <h2>Diffrence</h2>
-          </div>
-        </div>
-        <div class="tile tile3">
-          <h2>Philosophy</h2>
-        </div>
-        <div class="tile tile4">
-          <h2>Customers</h2>
-        </div>
-      <script>
-        $(document).ready(function () {
-    function bindTileHover() {
-        $(".tile").on("mouseover", function () {
-            $(".tile").removeClass("selected-tile").addClass("normal-tile");
-            $(this).addClass("selected-tile").removeClass("normal-tile");
-
-            $(".tile1").removeClass("tile1open").addClass("tile1closed");
-            $(".tile2").removeClass("tile2open").addClass("tile2closed");
-            $(".tile3").removeClass("tile3open").addClass("tile3closed");
-            $(".tile4").removeClass("tile4open").addClass("tile4closed");
-
-            if ($(this).hasClass("tile1")) {
-                $(this).removeClass("tile1closed").addClass("tile1open");
-            } else if ($(this).hasClass("tile2")) {
-                $(this).removeClass("tile2closed").addClass("tile2open");
-            } else if ($(this).hasClass("tile3")) {
-                $(this).removeClass("tile3closed").addClass("tile3open");
-            } else if ($(this).hasClass("tile4")) {
-                $(this).removeClass("tile4closed").addClass("tile4open");
-            }
-        });
-    }
-
-    function unbindTileHover() {
-        $(".tile").off("mouseover");
-    }
-
-    function checkWindowSize() {
-        if ($(window).width() > 1150) {
-            bindTileHover();
-        } else {
-            unbindTileHover();
-        }
-    }
-
-    // Initial check
-    checkWindowSize();
-
-    // Re-check on window resize
-    $(window).resize(function () {
-        checkWindowSize();
-    });
-});
-      </script>
+        
     </div>
+    <section class="contact-section">
+      <div class="container">
+          <div class="contactInfo"> 
+              <div>
+                  <h2>Contact Info</h2>
+                  <ul class="info">
+                      <li>
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #ffffff; margin-top:22px;"></i>
+                          <span>184 Ippokratous Street<br>
+                              Athens, Gr<br>
+                              11472</span>
+                          </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #ffffff; margin-top:10px;"></i>
+                          <span><a href = "mailto: nassosanagn@gmail.com" style="font-size:18px;">test@gmail.com</a></span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone fa-xl" style="color: #ffffff; margin-top: 22px;"></i>
+                          <span style=" margin-top: 15px;">702-279-3488</span>
+                      </li>
 
+                  </ul>
+              </div>
+              <ul class="sci">
+                <i class="fa-brands fa-facebook-f fa-2xl brand-icon" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter fa-2xl brand-icon" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-2xl brand-icon" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-youtube fa-2xl brand-icon" style="color: #ffffff;"></i>
+                  
+              </ul>
+          </div>
+              <div class="contactForm">
+                  <h2>Send a Message</h2>
+                  <div class="formBox">
+                  <div class="inputBox w50">
+                      <input type="text" name="" required>
+                      <span>First Name</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>Last Name</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="email" required>
+                      <span>Email Address</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>Mobile Number</span>
+                  </div>
+                  <div class="inputBox w100">
+                      <textarea required></textarea>
+                      <span>Write your message here...</span>
+                  </div>
+                  <div class="inputBox w100">
+                      <input type="submit" value="Send">
+                  </div>
+              </div>
+          </div>
+              
+              
+       
+  </section>
     <!--footer-->
     <footer class="padding_4x">
       <div class="flex">
@@ -453,5 +458,10 @@
         </section>
       </div>
     </footer>
+    <div id="cookie-box">
+      <p class="cookie-text">We use cookie to improve your experience on our site. By using our site you consent cookies. <b style="color:black">Learn more</b></p>
+      <button class="acceptbutton" onclick="hidecookies()">Allow Cookies</button>
+      <button class="declinebutton" onclick="hidecookies()">Decline</button>
+    </div>
   </body>
 </html>

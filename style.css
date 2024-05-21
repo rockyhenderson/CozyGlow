@@ -326,12 +326,12 @@ ul:hover {
     display: block;
   }
   .title {
-    margin:auto;
+    margin: auto;
     text-align: center;
     display: flex;
     justify-content: center;
     letter-spacing: 0 !important;
-    margin-left:0 !important;
+    margin-left: 0 !important;
   }
   .sub-navbar {
     display: none;
@@ -367,8 +367,8 @@ ul:hover {
 @media (max-width: 730px) {
   .right-top {
     height: 10vh;
-    font-size:16vw;
-    margin-top:5px;
+    font-size: 16vw;
+    margin-top: 5px;
   }
 }
 @media (max-width: 650px) {
@@ -382,7 +382,7 @@ ul:hover {
 @media (max-width: 490px) {
   .right-top {
     height: 10vw;
-    margin-top:15px;
+    margin-top: 15px;
   }
 }
 /***************************
@@ -522,6 +522,7 @@ fieldset {
 footer {
   background-color: var(--primary);
   color: var(--secondary);
+  border-top:var(--sub-primary) 5px solid;
 }
 
 footer h3 {
@@ -647,127 +648,377 @@ footer .flex:last-child a:hover {
   display: flex;
   height: 100vh;
 }
-.tile {
-  height: 100%;
-  background-color: var(--primary);
-  border-right: 1px var(--secondary) solid;
-  width: 20vw;
+#cookie-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 160px;
+  background-color: var(--secondary);
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  transition: width 0.6s ease-in-out, background-image 0.6s ease-in-out;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: black;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
 }
-.selected-tile {
-  width: 40vw;
+.cookie-text{
+  height:32px;
+width:280px;
+border:none;
+margin-top:-5px;
 }
-
-.tile1closed {
-  background-image: none;
+.acceptbutton{
+height:32px;
+width:280px;
+border:none;
+background-color: var(--primary);
+color:white;
 }
-.tile2closed {
-  background-image: none;
-}
-.tile3closed {
-  background-image: none;
-}
-.tile4closed {
-  background-image: none;
-}
-.tile1open {
-  background-image: url("img/Men_in_Suits.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-}
-.tile2open {
-  background-image: url("img/usapart.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
-.tile3open {
-  background-image: url("img/phil.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-}
-.tile4open {
-  background-image: url("img/customer.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+.declinebutton{
+  height:32px;
+  width:280px;
+  border:var(--primary) 1px solid;
+  background-color: var(--secondary);
+  color:var(--primary);
 }
 
-.lore-top h2 {
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-left: 5px;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  text-shadow: -1px 0 0 var(--secondary), 0 1px 0 var(--secondary),
-    1px 0 0 var(--secondary), 0 -1px 0 var(--secondary);
+/* @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
+
+section *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.inner-tile {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+
+.contact-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Poppins',sans-serif !important;
+
 }
-@media (max-width: 1750px) {
-  .lore-top h2 {
-    font-size: 40px;
-  }
+
+
+.container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    /* border-radius: 22px; */
+    /* background-color: var(--secondary); */
+
 }
-@media (max-width: 1350px) {
-  .lore-top h2 {
-    font-size: 35px;
-  }
-}
-@media (max-width: 1150px) {
-  .lore-top h2 {
-    font-size: 35px;
-  }
-  .lore-top {
+
+.container .contactInfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: var(--sub-primary);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-  }
-  .tile {
-    width: 95vw;
-    margin:auto;
-    border-radius: 25px;
-    margin-top:15px;
-    background-color: none;
-    border:none;
-  }
-  .tile1closed {
-    background-image: url("img/Men_in_Suits.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15); 
+}
+
+.container .contactInfo h2
+{
+    color: var(--secondary);
+    font-size:24px;
+    font-weight: 500;
+}
+
+.container .contactInfo ul.info 
+{
+   position: relative;
+   margin: 20px 0; 
+}
+
+.container .contactInfo ul.info li
+{
+   position: relative;
+   list-style: none;
+   display: flex;
+   margin: 20px 0;
+   cursor: pointer;
+   align-items: flex-start;
+}
+
+.container .contactInfo ul.info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+
+/* for gmail */
+.container .contactInfo ul.info li span a
+{
+    color: var(--secondary);
+    text-decoration: none;
+    width: 30px;
+    min-width: 30px;
+    
+}
+
+.container .contactInfo ul.info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.container .contactInfo ul.info li span:nth-child(2)
+{
+    color: var(--secondary);
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.container .contactInfo ul.sci
+{
+    position: relative;
+    display: flex;
+}
+
+.container .contactInfo ul.sci li
+{
+   list-style: none;  
+   margin-right: 15px;
+}
+
+.container .contactInfo ul.sci li a
+{
+   text-decoration: none;
+}
+
+.container .contactInfo ul.sci li a img
+{
+   filter: invert(1);
+}
+
+.container .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: var(--secondary); 
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+}
+
+.container .contactForm h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .contactForm .formBox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.container .contactForm .formBox .inputBox
+{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.container .contactForm .formBox .inputBox.w50
+{
+    width: 47%;
+}
+
+.container .contactForm .formBox .inputBox.w100
+{
+    width: 100%;
+}
+
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea 
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+.container .contactForm .formBox .inputBox textarea 
+{
+    height: 120px;
+}
+
+.container .contactForm .formBox .inputBox span 
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.container .contactForm .formBox .inputBox input:focus ~ span,
+.container .contactForm .formBox .inputBox input:valid ~ span,
+.container .contactForm .formBox .inputBox textarea:focus ~ span, 
+.container .contactForm .formBox .inputBox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size:  12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--sub-primary);
+    font-weight: 500;
+} 
+
+/* Css for the submit button */
+.container .contactForm .formBox .inputBox input[type="submit"]         
+{
+    position: relative;
     cursor: pointer;
-  }
-  .tile2closed {
-    background-image: url("img/usapart.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-  }
-  .tile3closed {
-    background-image: url("img/phil.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-  }
-  .tile4closed {
-    background-image: url("img/customer.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-  }
+    background: var(--sub-primary);
+    color: var(--secondary);
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+
+}
+
+.container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: var(--sub-primary)
+}
+
+/* make the form responsive */
+@media (max-width: 1200px)
+{
+    .container
+    {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    .container .contactInfo
+    {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .container .contactForm
+    {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    
+
+  .contact-section::before
+    {
+        display: none;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .contactForm
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .container .contactInfo
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border-radius: 0px;
+    }
+    .container .contactInfo ul.sci
+    {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .container .contactForm
+    {
+        padding: 25px;
+    }
+
+    .container .contactInfo{
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .contactInfo ul.sci
+    {
+        margin-top: 40px;
+    }
+
+    .container .contactForm .formBox .inputBox.w50
+    {
+        width: 100%;
+    }
+}
+input, textarea {
+  background-color: transparent;
+  color:black;
+}
+.brand-icon{
+  margin-right: 15px;
+}
+.info{
+  font-size: 18px;
 }
