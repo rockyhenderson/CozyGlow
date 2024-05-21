@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/568f2ff07d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css" />
+
+    <!--  jQuery 1.7+  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Include js plugin -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="logo"></div>
+    </nav>
+
+    <div id="secret-daddy-container-mango">
+      <div class="grid-container">
+        <div class="left-side">
+          <div class="product-image"></div>
+        </div>
+        <div class="right-top">
+          <div class="test">
+            <div class="title">
+        
+              <h1>MANGO</h1>
+            </div>
+            <nav class="sub-navbar">
+              <ul class="mangoul" style="color: white" onclick="mangooption()">
+                Mango
+              </ul>
+              <ul class="appleul" onclick="appleoption()">
+                Apple
+              </ul>
+              <ul class="guavaul" onclick="guavaoption()">
+                Guava
+              </ul>
+              <ul class="peachul" onclick="peachoption()">
+                Peach
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="image-caro">
+            <div class="caro-image-rb mango1" onclick="changeFruit(1)"></div>
+            <div class="caro-image-rb mango2" onclick="changeFruit(2)"></div>
+            <div class="caro-image-rb mango3" onclick="changeFruit(3)"></div>
+            <div class="caro-image-rb mango4" onclick="changeFruit(4)"></div>
+            <div class="caro-image-rb mango5" onclick="changeFruit(5)"></div>
+          </div>
+          <div class="right-bottom-text">
+            <h2 style="color: white">£ 42.40</h2>
+            <p>
+              The <b>Mango Candle</b> infuses any room with the lush sweetness
+              of a ripe mango basking in the tropical sun. Crafted from
+              high-quality wax, this candle emits a vibrant, juicy aroma that is
+              both uplifting and refreshing.
+            </p>
+            <button class="add-to-bask-button">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="secret-daddy-container-apple" style="display: none">
+      <div class="grid-container">
+        <div class="left-side">
+          <div class="product-image"></div>
+        </div>
+        <div class="right-top">
+          <div class="test">
+            <div class="title">
+        
+              <h1>APPLE</h1>
+            </div>
+            <nav class="sub-navbar">
+              <ul class="mangoul" style="color: white" onclick="mangooption()">
+                Mango
+              </ul>
+              <ul class="appleul" onclick="appleoption()">
+                Apple
+              </ul>
+              <ul class="guavaul" onclick="guavaoption()">
+                Guava
+              </ul>
+              <ul class="peachul" onclick="peachoption()">
+                Peach
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="image-caro">
+            <div class="caro-image-rb mango1" onclick="changeFruit(1)"></div>
+            <div class="caro-image-rb mango2" onclick="changeFruit(2)"></div>
+            <div class="caro-image-rb mango3" onclick="changeFruit(3)"></div>
+            <div class="caro-image-rb mango4" onclick="changeFruit(4)"></div>
+            <div class="caro-image-rb mango5" onclick="changeFruit(5)"></div>
+          </div>
+          <div class="right-bottom-text">
+            <h2 style="color: white">£ 42.40</h2>
+            <p>
+              Experience the crisp, fresh aroma of an <b>apple orchard</b> in
+              full bloom. This exquisite candle, made from superior wax, offers
+              a refreshing scent that captures the essence of autumn's favorite
+              fruit. Its clear, pure fragrance uplifts and rejuvenates, bringing
+              a slice of New England charm into your home.
+
+              <button class="add-to-bask-button">Add to Basket</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="secret-daddy-container-guava" style="display: none">
+      <div class="grid-container">
+        <div class="left-side">
+          <div class="product-image"></div>
+        </div>
+        <div class="right-top">
+          <div class="test">
+            <div class="title">
+          
+              <h1>guava</h1>
+            </div>
+            <nav class="sub-navbar">
+              <ul class="mangoul" style="color: white" onclick="mangooption()">
+                Mango
+              </ul>
+              <ul class="appleul" onclick="appleoption()">
+                Apple
+              </ul>
+              <ul class="guavaul" onclick="guavaoption()">
+                Guava
+              </ul>
+              <ul class="peachul" onclick="peachoption()">
+                Peach
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="image-caro">
+            <div class="caro-image-rb mango1" onclick="changeFruit(1)"></div>
+            <div class="caro-image-rb mango2" onclick="changeFruit(2)"></div>
+            <div class="caro-image-rb mango3" onclick="changeFruit(3)"></div>
+            <div class="caro-image-rb mango4" onclick="changeFruit(4)"></div>
+            <div class="caro-image-rb mango5" onclick="changeFruit(5)"></div>
+          </div>
+          <div class="right-bottom-text">
+            <h2 style="color: white">£ 42.40</h2>
+            <p>
+              Surround yourself with the exotic essence of a <b>fresh guava</b>
+              harvested at the peak of its sweetness. This candle is made from
+              premium wax and releases a lush, tropical fragrance that
+              invigorates and enlivens any space. Its captivating scent is a
+              blissful reminder of warm, sun-kissed days spent in paradise.
+            </p>
+            <button class="add-to-bask-button">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="secret-daddy-container-peach" style="display: none">
+      <div class="grid-container">
+        <div class="left-side">
+          <div class="product-image"></div>
+        </div>
+        <div class="right-top">
+          <div class="test">
+            <div class="title">
+
+              <h1>PEACH</h1>
+            </div>
+            <nav class="sub-navbar">
+              <ul class="mangoul" style="color: white" onclick="mangooption()">
+                Mango
+              </ul>
+              <ul class="appleul" onclick="appleoption()">
+                Apple
+              </ul>
+              <ul class="guavaul" onclick="guavaoption()">
+                Guava
+              </ul>
+              <ul class="peachul" onclick="peachoption()">
+                Peach
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="image-caro">
+            <div class="caro-image-rb mango1" onclick="changeFruit(1)"></div>
+            <div class="caro-image-rb mango2" onclick="changeFruit(2)"></div>
+            <div class="caro-image-rb mango3" onclick="changeFruit(3)"></div>
+            <div class="caro-image-rb mango4" onclick="changeFruit(4)"></div>
+            <div class="caro-image-rb mango5" onclick="changeFruit(5)"></div>
+          </div>
+          <div class="right-bottom-text">
+            <h2 style="color: white">£ 42.40</h2>
+            <p>
+              Immerse your senses in the delicate sweetness of
+              <b>sun-ripened peaches</b> with this finely crafted candle. The
+              high-quality wax ensures a slow, clean burn, emitting a soft,
+              juicy aroma that gently fills any room. This candle’s warm,
+              comforting fragrance evokes memories of a sunny orchard brimming
+              with the promise of summer.
+            </p>
+            <button class="add-to-bask-button">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-section">
+      <div class="caro-title"><h2>Seasonal Deals</h2></div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (1).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (2).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (3).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (4).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (5).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (6).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (7).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (8).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (9).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (10).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (11).webp"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="candle-img-caro"
+            src="img/product-carousel/Candle (12).webp"
+          />
+        </div>
+      </div>
+
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          slideSpeed: 200,
+          margin: 10,
+          responsiveClass: true,
+          responsive: true,
+          items: 5,
+          itemsDesktop: [2100, 4],
+          itemsDesktopSmall: [1700, 3],
+          itemsTablet: [1200, 2],
+          itemsMobile: [820, 1],
+          navigation: true,
+          autplay: true,
+        });
+      </script>
+    </div>
+      <div class="lore-top">
+        <div class="tile tile1">
+          <h2>Story</h2>
+        </div>
+        <div class="tile tile2 tile2open selected-tile">
+          <div class="inner-tile">
+            <h2>Diffrence</h2>
+          </div>
+        </div>
+        <div class="tile tile3">
+          <h2>Philosophy</h2>
+        </div>
+        <div class="tile tile4">
+          <h2>Customers</h2>
+        </div>
+      <script>
+        $(document).ready(function () {
+    function bindTileHover() {
+        $(".tile").on("mouseover", function () {
+            $(".tile").removeClass("selected-tile").addClass("normal-tile");
+            $(this).addClass("selected-tile").removeClass("normal-tile");
+
+            $(".tile1").removeClass("tile1open").addClass("tile1closed");
+            $(".tile2").removeClass("tile2open").addClass("tile2closed");
+            $(".tile3").removeClass("tile3open").addClass("tile3closed");
+            $(".tile4").removeClass("tile4open").addClass("tile4closed");
+
+            if ($(this).hasClass("tile1")) {
+                $(this).removeClass("tile1closed").addClass("tile1open");
+            } else if ($(this).hasClass("tile2")) {
+                $(this).removeClass("tile2closed").addClass("tile2open");
+            } else if ($(this).hasClass("tile3")) {
+                $(this).removeClass("tile3closed").addClass("tile3open");
+            } else if ($(this).hasClass("tile4")) {
+                $(this).removeClass("tile4closed").addClass("tile4open");
+            }
+        });
+    }
+
+    function unbindTileHover() {
+        $(".tile").off("mouseover");
+    }
+
+    function checkWindowSize() {
+        if ($(window).width() > 1150) {
+            bindTileHover();
+        } else {
+            unbindTileHover();
+        }
+    }
+
+    // Initial check
+    checkWindowSize();
+
+    // Re-check on window resize
+    $(window).resize(function () {
+        checkWindowSize();
+    });
+});
+      </script>
+    </div>
+
+    <!--footer-->
+    <footer class="padding_4x">
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <h3>Pages</h3>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Location</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Resources</h3>
+          <a href="#">Modern Slavery Statement</a>
+          <a href="#">How we stay econminmical</a>
+          <a href="#">Legal Stuff</a>
+          <a href="#">I dont know</a>
+          <a href="#">Filler :(</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Newsletter</h3>
+          <p>You can trust us. we only send promo offers,</p>
+          <fieldset class="fixed_flex">
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="Your Email Address"
+              style="color: white"
+            />
+            <button class="btn btn_2">Subscribe</button>
+          </fieldset>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <p>
+            Copyright ©2024 All rights reserved || Jack Henderson, Kamil
+            Falkowski, Melodie Laplaine, Morgan Waugh
+          </p>
+        </section>
+        <section class="flex-content padding_1x">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
