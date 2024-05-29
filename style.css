@@ -206,6 +206,15 @@ button:hover,
   background-color: #fffacd;
   /* Lemon chiffon */
 }
+.lore-top-right {
+    background-color: #e6e6fa;
+    /* Lavender */
+  }
+  
+  .lore-top-left {
+    background-color: #fffacd;
+    /* Lemon chiffon */
+  }
 
 .product-image {
   background-image: url(img/mango/mango1.webp);
@@ -616,7 +625,7 @@ footer .flex:last-child a:hover {
 }
 
 .caro-title {
-  height: 10%;
+  height: ;
   text-transform: uppercase;
   text-shadow: -1px 0 0 var(--secondary), 0 1px 0 var(--secondary),
     1px 0 0 var(--secondary), 0 -1px 0 var(--secondary);
@@ -636,18 +645,15 @@ footer .flex:last-child a:hover {
   border-radius: 25px;
 }
 .item {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 25px;
   margin: auto;
 }
 .item:hover {
   filter: blur(10px);
 }
-.lore-top {
-  display: flex;
-  height: 100vh;
-}
+
 #cookie-box {
   position: fixed;
   bottom: 20px;
